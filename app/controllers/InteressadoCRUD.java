@@ -1,14 +1,16 @@
 package controllers;
 
 
+import javax.inject.Inject;
+
 import models.Interessado;
+import models.InteressadoHelper;
+import play.Logger;
 import play.data.Form;
 import play.data.FormFactory;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.*;
-
-import javax.inject.Inject;
+import views.html.index;
 
 /**
  * Created by danielgoncalvesti on 17/05/17.
@@ -28,6 +30,8 @@ public class InteressadoCRUD extends Controller {
     }
 
     public Result add(){
+    	Form<Interessado> form = interessadoForm.bindFromRequest();
+    	InteressadoHelper.salvar(form.get());
         return TODO;
     }
 

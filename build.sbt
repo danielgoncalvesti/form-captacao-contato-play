@@ -6,6 +6,10 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
 
 scalaVersion := "2.11.7"
 
+EclipseKeys.projectFlavor := EclipseProjectFlavor.Java           
+EclipseKeys.createSrc := EclipseCreateSrc.ValueSet(EclipseCreateSrc.ManagedClasses, EclipseCreateSrc.ManagedResources)  
+EclipseKeys.preTasks := Seq(compile in Compile)
+
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,

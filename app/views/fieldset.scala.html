@@ -19,10 +19,11 @@
         help = "Por favor, coloque seu email válido.")
 
     <!-- GPA -->
-    @select(intForm("conhecimentoJava"),
-    label = "Conhecimento em Java",
-    isMultiple = false,
-    help = "Select your GPA. (required)")
+    @select(intForm("conhecimentoJava.id"),
+          label = "Qual seu nível de conhecimento em Java?",
+          optionMap = ConhecimentoJava.options,
+          isMultiple = false,
+          help = "Selecione seu conhecimento em Java (required)")
 
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">

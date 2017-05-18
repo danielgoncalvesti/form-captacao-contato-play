@@ -1,4 +1,4 @@
-@(field: Field, label: String = "CHANGEME", isMultiple: Boolean, help: String = "")
+@(field: Field, label: String = "CHANGEME", optionMap: Map[String, String], isMultiple: Boolean, help: String = "")
 
   <div class="form-group @if(field.hasErrors) {has-error}">
     <label class="col-sm-2 control-label" for="@field.id">@label</label>
@@ -8,9 +8,10 @@
         id="@field.id"
         name="@if(isMultiple) {@(field.name + "[]")} else {@field.name}"
         @if(isMultiple) {multiple="multiple"}>
-        @if(!isMultiple) {<option class="blank" value="">Please select a value</option>}
-        <option id="" value="">0</option>
-        <option id="" value="">1</option>
+        @if(!isMultiple) {<option class="blank" value=""{selected}>Selecione seu conhecimento em Java</option>}
+        @for((idCJ, isSelected) <- optionMap) {
+          <option id="@idCJ" value="@idCJ">@isSelected</option>
+        }
 
       </select>
       <span class="help-block">@help</span>
