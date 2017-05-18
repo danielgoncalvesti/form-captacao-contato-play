@@ -1,0 +1,4 @@
+[0m[[31merror[0m] [0m/Users/danielgoncalvesti/devel/captacao-email-play/app/views/fieldset.scala.html:27: Expected '"' but found 'EOF'[0m
+[0m[[31merror[0m] [0m</fieldset>[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

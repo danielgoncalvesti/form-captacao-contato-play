@@ -1,0 +1,34 @@
+@(message: String, intForm: Form[Interessado])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@main("Inscrição do Workshop do PlayFramework") {
+<div class="container">
+    <div class="well">
+        @form(routes.InteressadoCRUD.add(), 'class -> "form-vertical") {
+            @fieldset(intForm)
+
+        }
+    </div>
+    @if(flash.containsKey("success")) {
+    <div class="well">
+        <div id="success-message" class="text-success">
+            @flash.get("success")
+        </div>
+    </div>
+    }
+    @if(flash.containsKey("error")) {
+    <div class="well">
+        <div id="error-message" class="text-danger">
+            @flash.get("error")
+        </div>
+    </div>
+    }
+
+
+
+
+
+</div>
+}

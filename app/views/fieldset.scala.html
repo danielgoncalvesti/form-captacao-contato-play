@@ -1,0 +1,32 @@
+@(intForm: Form[Interessado])
+
+@import views.html.bootstrap3._
+<fieldset>
+    <!-- Header -->
+    <div id="legend">
+        <legend>Formulário de Inscrição</legend>
+    </div>
+
+    <!-- Name -->
+    @text(intForm("nome"),
+        label = "Nome",
+        placeholder = "Nome Completo",
+        help = "Por favor, coloque seu nome.")
+
+    @text(intForm("email"),
+        label = "Email",
+        placeholder = "Email",
+        help = "Por favor, coloque seu email válido.")
+
+    <!-- GPA -->
+    @select(intForm("conhecimentoJava"),
+    label = "Conhecimento em Java",
+    isMultiple = false,
+    help = "Select your GPA. (required)")
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="submit" type="submit" value="Submit" class="btn btn-primary">Enviar Inscrição</button>
+        </div>
+    </div>
+</fieldset>
