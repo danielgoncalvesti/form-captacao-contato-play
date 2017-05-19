@@ -9,7 +9,8 @@
              name="@field.name" 
              value="@field.value.getOrElse("")"
              placeholder="@placeholder" />
-      <span class="help-block">@help</span>
-      <span class="help-block">@{field.error.map { error => error.message }}</span>
+      <span class="help-block">@help <span>@{field.error.map {error => error.message }}</span>  </span>
+      <!--<span class="help-block">@{field.error.map { error => error.message }}</span>-->
+<br />
     </div>
   </div>

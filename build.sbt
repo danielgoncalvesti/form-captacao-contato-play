@@ -11,8 +11,6 @@ EclipseKeys.createSrc := EclipseCreateSrc.ValueSet(EclipseCreateSrc.ManagedClass
 EclipseKeys.preTasks := Seq(compile in Compile)
 
 libraryDependencies ++= Seq(
-  javaJdbc,
   cache,
-  javaWs,
-  jdbc
+  javaWs
 )

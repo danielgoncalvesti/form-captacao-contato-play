@@ -20,7 +20,8 @@ public class ConhecimentoJava extends Model {
 	@Constraints.Required
 	public String descricao;
 	
-	public ConhecimentoJava(String descricao){
+	public ConhecimentoJava(Integer id, String descricao){
+		this.id = id;
 		this.descricao = descricao;
 	}
 	

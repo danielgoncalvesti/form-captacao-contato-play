@@ -2,6 +2,7 @@
 
 @import views.html.bootstrap3._
 <fieldset>
+
     <!-- Header -->
     <div id="legend">
         <legend>Formulário de Inscrição</legend>
@@ -9,12 +10,12 @@
 
     <!-- Name -->
     @text(intForm("nome"),
-        label = "Nome",
+        label = "Nome*",
         placeholder = "Nome Completo",
         help = "Por favor, coloque seu nome.")
 
     @text(intForm("email"),
-        label = "Email",
+        label = "Email*",
         placeholder = "Email",
         help = "Por favor, coloque seu email válido.")
 
@@ -31,3 +32,4 @@
         </div>
     </div>
 </fieldset>
+
