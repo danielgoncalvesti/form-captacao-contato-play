@@ -8,13 +8,15 @@
         id="@field.id"
         name="@if(isMultiple) {@(field.name + "[]")} else {@field.name}"
         @if(isMultiple) {multiple="multiple"}>
-        @if(!isMultiple) {<option class="blank" value=""{selected}>Selecione seu conhecimento em Java</option>}
+        @if(!isMultiple) {<option class="blank" value="null"{selected}>Selecione seu conhecimento em Java</option>}
         @for((idCJ, isSelected) <- optionMap) {
           <option id="@idCJ" value="@idCJ">@isSelected</option>
         }
 
       </select>
       <span class="help-block">@help</span>
-      <span class="help-block">@{field.error.map { error => error.message }}</span>
+      <!--<span class="help-block">@{field.error.map { error => error.message }}</span>-->
+      <span class="help-block">@{field.error.map { error => Messages(error.message) }}</span>
+
     </div>
   </div>

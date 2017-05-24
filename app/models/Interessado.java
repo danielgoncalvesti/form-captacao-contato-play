@@ -1,23 +1,19 @@
 package models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
+import javax.validation.Constraint;
 
-import play.data.format.Formats;
 import play.data.validation.Constraints;
 
 import com.avaje.ebean.Model;
+
+
 import play.data.validation.ValidationError;
-import play.i18n.Messages;
+
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 /**
@@ -30,17 +26,19 @@ public class Interessado extends Model{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Long id;
 
-    @Formats.NonEmpty
+
     @Constraints.Required(message = "Este campo é obrigatório.")
     public String nome;
     
     @Constraints.Required(message = "Este campo é obrigatório.")
+    @Constraints.Email(message = "Por favor, adicione um email válido.")
     public String email;
     
 //    @Constraints.Required
 //    public Integer idade;
-    
-    @ManyToOne
+
+    @JoinColumn(name="conhecimentojava_id", referencedColumnName="id")
+    @Constraints.Required(message="teste")
     public ConhecimentoJava conhecimentoJava;
 
     public Interessado(String nome, String email, ConhecimentoJava cj){
@@ -49,10 +47,22 @@ public class Interessado extends Model{
         this.conhecimentoJava = cj;
     }
 
-    public List<ValidationError> validate() {
+
+    public ConhecimentoJava getConhecimentoJava() {
+        return conhecimentoJava;
+    }
+
+    public void setConhecimentoJava(ConhecimentoJava conhecimentoJava) {
+        this.conhecimentoJava = conhecimentoJava;
+    }
+
+    public static Finder<Long, ConhecimentoJava> find = new Finder<Long,ConhecimentoJava>(ConhecimentoJava.class);
+
+
+        public List<ValidationError> validate() {
         List<ValidationError> errors = new ArrayList<ValidationError>();
         if (nome == null || nome.equals("")) {
-            errors.add(new ValidationError("nome", "This e-mail is already registered."));
+            errors.add(new ValidationError("conhecimeentoJava", "This e-mail is already registered."));
         }
         return errors.isEmpty() ? null : errors;
     }

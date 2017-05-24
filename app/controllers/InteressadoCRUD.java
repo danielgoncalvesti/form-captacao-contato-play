@@ -15,7 +15,7 @@ import play.i18n.MessagesApi;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.defaultpages.error;
-import views.html.index;
+import views.html.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class InteressadoCRUD extends Controller {
 
     public Result index(){
         Form<Interessado> form = Form.form(Interessado.class);
-        return ok(index.render("Index", form));
+        return ok(views.html.index.render("Index", form));
     }
 
     public Result add(){
@@ -44,23 +44,23 @@ public class InteressadoCRUD extends Controller {
         if(form.hasErrors()){
 
             flash("error", "Por favor, complete os campos abaixo!");
-            return badRequest(index.render("Index", form));
+            return badRequest(views.html.index.render("Index", form));
         }
     	InteressadoHelper.salvar(form.get());
     	flash("success", form.get().nome + " sua inscrição foi realizada com sucesso!");
-        //return redirect ("/");
-        return ok(index.render("Index", form));
+        return redirect ("/");
+        //return ok(views.html.index.render("Index", form));
     }
 
 
-    public static void validationErrorExamples() {
-
-
-        //#validation-error-examples
-        // Global error without internationalization:
-        new ValidationError("nome", "Errors occured. Please check your input!");
-        // Global error; "validationFailed" should be defined in `conf/messages` - taking two arguments:
-
-    }
+//    public static void validationErrorExamples() {
+//
+//
+//        //#validation-error-examples
+//        // Global error without internationalization:
+//        new ValidationError("nome", "Errors occured. Please check your input!");
+//        // Global error; "validationFailed" should be defined in `conf/messages` - taking two arguments:
+//
+//    }
 
 }

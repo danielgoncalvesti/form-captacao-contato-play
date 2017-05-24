@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 import play.data.validation.Constraints;
 
 import com.avaje.ebean.Model;
@@ -17,9 +18,10 @@ public class ConhecimentoJava extends Model {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	public Integer id;
-	@Constraints.Required
+
 	public String descricao;
-	
+
+
 	public ConhecimentoJava(Integer id, String descricao){
 		this.id = id;
 		this.descricao = descricao;

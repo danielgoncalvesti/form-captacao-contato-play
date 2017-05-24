@@ -21,10 +21,10 @@
 
     <!-- GPA -->
     @select(intForm("conhecimentoJava.id"),
-          label = "Qual seu nível de conhecimento em Java?",
+          label = "Qual seu nível de conhecimento em Java?*",
           optionMap = ConhecimentoJava.options,
           isMultiple = false,
-          help = "Selecione seu conhecimento em Java (required)")
+          help = "Selecione seu conhecimento em Java")
 
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
