@@ -29,6 +29,7 @@ public class Interessado extends Model{
 //    @Constraints.Required
 //    public Integer idade;
 
+    @ManyToOne
     @JoinColumn(name="conhecimentojava_id", referencedColumnName="id")
     @Constraints.Required(message="teste")
     public ConhecimentoJava conhecimentoJava;

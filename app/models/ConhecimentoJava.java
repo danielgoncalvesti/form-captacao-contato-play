@@ -13,11 +13,11 @@ import com.avaje.ebean.Model;
 public class ConhecimentoJava extends Model {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-	public Integer id;
+	public Long id;
 
 	public String descricao;
 
-	public ConhecimentoJava(Integer id, String descricao){
+	public ConhecimentoJava(Long id, String descricao){
 		this.id = id;
 		this.descricao = descricao;
 	}

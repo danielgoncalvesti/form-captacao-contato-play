@@ -2,3 +2,6 @@
 /models/
 /views/
 /prod.conf
+/evolutions/
+/controllers/
+/services/

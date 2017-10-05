@@ -17,10 +17,10 @@ public class Global extends GlobalSettings {
 
         List<ConhecimentoJava> list = ConhecimentoJava.find.findList();
         if (list.size() == 0) {
-            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(1, "Não tenho conhecimento"));
-            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(2, "Básico"));
-            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(3, "Intermediário"));
-            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(4, "Avançado"));
+            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(1L, "Não tenho conhecimento"));
+            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(2L, "Básico"));
+            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(3L, "Intermediário"));
+            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(4L, "Avançado"));
         }
     }
 
