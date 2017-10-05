@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/danielgoncalvesti/devel/form-captacao-contato-play/conf/routes
-// @DATE:Wed Oct 04 23:58:03 BRT 2017
+// @SOURCE:/home/ufabc/devel/form-captacao-contato-play/conf/routes
+// @DATE:Thu Oct 05 10:48:03 BRT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:11
+    // @LINE:10
     def add: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.InteressadoCRUD.add",
       """
@@ -45,7 +45,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:14
+  // @LINE:13
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -53,32 +53,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:14
+    // @LINE:13
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
         function(file1) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("file", file1)})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:8
-  class ReverseCountController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:8
-    def count: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CountController.count",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "count"})
         }
       """
     )

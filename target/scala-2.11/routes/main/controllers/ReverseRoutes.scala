@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/danielgoncalvesti/devel/form-captacao-contato-play/conf/routes
-// @DATE:Wed Oct 04 23:58:03 BRT 2017
+// @SOURCE:/home/ufabc/devel/form-captacao-contato-play/conf/routes
+// @DATE:Thu Oct 05 10:48:03 BRT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -20,7 +20,7 @@ package controllers {
     }
 
   
-    // @LINE:11
+    // @LINE:10
     def add(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "add")
@@ -34,32 +34,17 @@ package controllers {
   
   }
 
-  // @LINE:14
+  // @LINE:13
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:14
+    // @LINE:13
     def at(file:String): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
-    }
-  
-  }
-
-  // @LINE:8
-  class ReverseCountController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:8
-    def count(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "count")
     }
   
   }

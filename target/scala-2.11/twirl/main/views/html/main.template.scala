@@ -35,12 +35,14 @@ Seq[Any](format.raw/*1.32*/("""
 <html>
 <head>
     <title>Curso de Scala</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
     <link rel="stylesheet" href=""""),_display_(/*8.35*/routes/*8.41*/.Assets.at("stylesheets/bootstrap.min.css")),format.raw/*8.84*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*9.35*/routes/*9.41*/.Assets.at("stylesheets/bootflat.min.css")),format.raw/*9.83*/("""">
+    
 
     <!--  Load site-specific customizations after bootstrap. -->
-    <link rel="stylesheet" media="screen" href=""""),_display_(/*11.50*/routes/*11.56*/.Assets.at("stylesheets/main.css")),format.raw/*11.90*/("""">
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*12.55*/routes/*12.61*/.Assets.at("images/favicon.png")),format.raw/*12.93*/("""">
+    <link rel="stylesheet" media="screen" href=""""),_display_(/*13.50*/routes/*13.56*/.Assets.at("stylesheets/main.css")),format.raw/*13.90*/("""">
+    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*14.55*/routes/*14.61*/.Assets.at("images/favicon.png")),format.raw/*14.93*/("""">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -52,24 +54,24 @@ Seq[Any](format.raw/*1.32*/("""
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> -->
                 <!--  Display three horizontal lines when navbar collapsed. -->
-                <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-            </button>
+        <!--           <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> -->
+        <!--     </button>  -->
             <a class="navbar-brand" href="/">Curso de Scala</a>
         </div>
     </div>
 </div>
 
-"""),_display_(/*33.2*/content),format.raw/*33.9*/("""
-"""),format.raw/*34.1*/("""<script src=""""),_display_(/*34.15*/routes/*34.21*/.Assets.at("javascripts/jquery.min.js")),format.raw/*34.60*/(""""></script>
-<script src=""""),_display_(/*35.15*/routes/*35.21*/.Assets.at("javascripts/bootstrap.min.js")),format.raw/*35.63*/(""""></script>
+"""),_display_(/*35.2*/content),format.raw/*35.9*/("""
+"""),format.raw/*36.1*/("""<script src=""""),_display_(/*36.15*/routes/*36.21*/.Assets.at("javascripts/jquery.min.js")),format.raw/*36.60*/(""""></script>
+<script src=""""),_display_(/*37.15*/routes/*37.21*/.Assets.at("javascripts/bootstrap.min.js")),format.raw/*37.63*/(""""></script>
 
 <!-- Enable tooltips. Used primarily to validate that JQuery + Bootstrap JS are loaded. Remove this script if you don't want tooltips. -->
 <script type="text/javascript">
-    jQuery(function ($) """),format.raw/*39.25*/("""{"""),format.raw/*39.26*/("""
-        """),format.raw/*40.9*/("""$("[rel='tooltip']").tooltip()
-    """),format.raw/*41.5*/("""}"""),format.raw/*41.6*/(""");
+    jQuery(function ($) """),format.raw/*41.25*/("""{"""),format.raw/*41.26*/("""
+        """),format.raw/*42.9*/("""$("[rel='tooltip']").tooltip()
+    """),format.raw/*43.5*/("""}"""),format.raw/*43.6*/(""");
     </script>
 </body>
 </html>
@@ -93,11 +95,11 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 05 00:40:08 BRT 2017
-                  SOURCE: /Users/danielgoncalvesti/devel/form-captacao-contato-play/app/views/main.scala.html
-                  HASH: dd80490eb63249fef8ec6e47b4b51b2d55bcf804
-                  MATRIX: 748->1|873->31|901->33|1100->206|1114->212|1177->255|1322->373|1337->379|1392->413|1476->470|1491->476|1544->508|2443->1381|2470->1388|2498->1389|2539->1403|2554->1409|2614->1448|2667->1474|2682->1480|2745->1522|2981->1730|3010->1731|3046->1740|3108->1775|3136->1776
-                  LINES: 27->1|32->1|34->3|39->8|39->8|39->8|42->11|42->11|42->11|43->12|43->12|43->12|64->33|64->33|65->34|65->34|65->34|65->34|66->35|66->35|66->35|70->39|70->39|71->40|72->41|72->41
+                  DATE: Thu Oct 05 11:16:02 BRT 2017
+                  SOURCE: /home/ufabc/devel/form-captacao-contato-play/app/views/main.scala.html
+                  HASH: f513990165a9436307139e4acd8c589b75d3cdc5
+                  MATRIX: 748->1|873->31|901->33|1187->293|1201->299|1264->342|1327->379|1341->385|1403->427|1553->550|1568->556|1623->590|1707->647|1722->653|1775->685|2703->1587|2730->1594|2758->1595|2799->1609|2814->1615|2874->1654|2927->1680|2942->1686|3005->1728|3241->1936|3270->1937|3306->1946|3368->1981|3396->1982
+                  LINES: 27->1|32->1|34->3|39->8|39->8|39->8|40->9|40->9|40->9|44->13|44->13|44->13|45->14|45->14|45->14|66->35|66->35|67->36|67->36|67->36|67->36|68->37|68->37|68->37|72->41|72->41|73->42|74->43|74->43
                   -- GENERATED --
               */
           

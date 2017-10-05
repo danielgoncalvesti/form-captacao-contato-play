@@ -4,3 +4,8 @@ git add .
 stage
 exit'
 run
+RUN 
+run
+clean
+compile
+~run

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/danielgoncalvesti/devel/form-captacao-contato-play/conf/routes
-// @DATE:Wed Oct 04 23:58:03 BRT 2017
+// @SOURCE:/home/ufabc/devel/form-captacao-contato-play/conf/routes
+// @DATE:Thu Oct 05 10:48:03 BRT 2017
 
 package router
 
@@ -18,9 +18,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   InteressadoCRUD_1: controllers.InteressadoCRUD,
-  // @LINE:8
-  CountController_2: controllers.CountController,
-  // @LINE:14
+  // @LINE:13
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -29,17 +27,15 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     InteressadoCRUD_1: controllers.InteressadoCRUD,
-    // @LINE:8
-    CountController_2: controllers.CountController,
-    // @LINE:14
+    // @LINE:13
     Assets_0: controllers.Assets
-  ) = this(errorHandler, InteressadoCRUD_1, CountController_2, Assets_0, "/")
+  ) = this(errorHandler, InteressadoCRUD_1, Assets_0, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, InteressadoCRUD_1, CountController_2, Assets_0, prefix)
+    new Routes(errorHandler, InteressadoCRUD_1, Assets_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -48,7 +44,6 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.InteressadoCRUD.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """count""", """controllers.CountController.count"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """add""", """controllers.InteressadoCRUD.add"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
@@ -75,28 +70,11 @@ class Routes(
     )
   )
 
-  // @LINE:8
-  private[this] lazy val controllers_CountController_count1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("count")))
-  )
-  private[this] lazy val controllers_CountController_count1_invoker = createInvoker(
-    CountController_2.count,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.CountController",
-      "count",
-      Nil,
-      "GET",
-      """ An example controller showing how to use dependency injection""",
-      this.prefix + """count"""
-    )
-  )
-
-  // @LINE:11
-  private[this] lazy val controllers_InteressadoCRUD_add2_route = Route("POST",
+  // @LINE:10
+  private[this] lazy val controllers_InteressadoCRUD_add1_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("add")))
   )
-  private[this] lazy val controllers_InteressadoCRUD_add2_invoker = createInvoker(
+  private[this] lazy val controllers_InteressadoCRUD_add1_invoker = createInvoker(
     InteressadoCRUD_1.add,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -109,11 +87,11 @@ class Routes(
     )
   )
 
-  // @LINE:14
-  private[this] lazy val controllers_Assets_at3_route = Route("GET",
+  // @LINE:13
+  private[this] lazy val controllers_Assets_at2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at3_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at2_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -135,22 +113,16 @@ class Routes(
         controllers_InteressadoCRUD_index0_invoker.call(InteressadoCRUD_1.index)
       }
   
-    // @LINE:8
-    case controllers_CountController_count1_route(params) =>
+    // @LINE:10
+    case controllers_InteressadoCRUD_add1_route(params) =>
       call { 
-        controllers_CountController_count1_invoker.call(CountController_2.count)
+        controllers_InteressadoCRUD_add1_invoker.call(InteressadoCRUD_1.add)
       }
   
-    // @LINE:11
-    case controllers_InteressadoCRUD_add2_route(params) =>
-      call { 
-        controllers_InteressadoCRUD_add2_invoker.call(InteressadoCRUD_1.add)
-      }
-  
-    // @LINE:14
-    case controllers_Assets_at3_route(params) =>
+    // @LINE:13
+    case controllers_Assets_at2_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at3_invoker.call(Assets_0.at(path, file))
+        controllers_Assets_at2_invoker.call(Assets_0.at(path, file))
       }
   }
 }
