@@ -2,15 +2,11 @@ package models;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-
 import play.data.validation.Constraints;
-
 import com.avaje.ebean.Model;
 
 @Entity
@@ -20,7 +16,6 @@ public class ConhecimentoJava extends Model {
 	public Integer id;
 
 	public String descricao;
-
 
 	public ConhecimentoJava(Integer id, String descricao){
 		this.id = id;
@@ -37,6 +32,5 @@ public class ConhecimentoJava extends Model {
 		}
 		return options;
 	}
-	
 	
 }

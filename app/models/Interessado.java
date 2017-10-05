@@ -2,15 +2,9 @@ package models;
 
 import javax.persistence.*;
 import javax.validation.Constraint;
-
 import play.data.validation.Constraints;
-
 import com.avaje.ebean.Model;
-
-
 import play.data.validation.ValidationError;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
