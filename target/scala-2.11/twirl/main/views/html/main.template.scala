@@ -36,7 +36,7 @@ Seq[Any](format.raw/*1.32*/("""
 <head>
     <title>play-example-form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href=""""),_display_(/*8.35*/routes/*8.41*/.Assets.at("stylesheets/bootstrap.min.css")),format.raw/*8.84*/("""">
 
     <!--  Load site-specific customizations after bootstrap. -->
     <link rel="stylesheet" media="screen" href=""""),_display_(/*11.50*/routes/*11.56*/.Assets.at("stylesheets/main.css")),format.raw/*11.90*/("""">
@@ -62,8 +62,8 @@ Seq[Any](format.raw/*1.32*/("""
 </div>
 
 """),_display_(/*33.2*/content),format.raw/*33.9*/("""
-"""),format.raw/*34.1*/("""<script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+"""),format.raw/*34.1*/("""<script src=""""),_display_(/*34.15*/routes/*34.21*/.Assets.at("javascripts/jquery.min.js")),format.raw/*34.60*/(""""></script>
+<script src=""""),_display_(/*35.15*/routes/*35.21*/.Assets.at("javascripts/bootstrap.min.js")),format.raw/*35.63*/(""""></script>
 
 <!-- Enable tooltips. Used primarily to validate that JQuery + Bootstrap JS are loaded. Remove this script if you don't want tooltips. -->
 <script type="text/javascript">
@@ -93,11 +93,11 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Wed Oct 04 23:27:50 BRT 2017
+                  DATE: Thu Oct 05 00:34:24 BRT 2017
                   SOURCE: /Users/danielgoncalvesti/devel/form-captacao-contato-play/app/views/main.scala.html
-                  HASH: d5962d8d43587a0caadbc7f07e36e8f2553e4e47
-                  MATRIX: 748->1|873->31|901->33|1289->394|1304->400|1359->434|1443->491|1458->497|1511->529|2413->1405|2440->1412|2468->1413|2844->1761|2873->1762|2909->1771|2971->1806|2999->1807
-                  LINES: 27->1|32->1|34->3|42->11|42->11|42->11|43->12|43->12|43->12|64->33|64->33|65->34|70->39|70->39|71->40|72->41|72->41
+                  HASH: ddefbbf2a716d22cfa426559624320f8a4f45f13
+                  MATRIX: 748->1|873->31|901->33|1103->209|1117->215|1180->258|1325->376|1340->382|1395->416|1479->473|1494->479|1547->511|2449->1387|2476->1394|2504->1395|2545->1409|2560->1415|2620->1454|2673->1480|2688->1486|2751->1528|2987->1736|3016->1737|3052->1746|3114->1781|3142->1782
+                  LINES: 27->1|32->1|34->3|39->8|39->8|39->8|42->11|42->11|42->11|43->12|43->12|43->12|64->33|64->33|65->34|65->34|65->34|65->34|66->35|66->35|66->35|70->39|70->39|71->40|72->41|72->41
                   -- GENERATED --
               */
           
