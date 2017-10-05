@@ -1,6 +1,5 @@
 package models;
 
-
 import javax.persistence.*;
 import javax.validation.Constraint;
 
@@ -26,7 +25,6 @@ public class Interessado extends Model{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Long id;
 
-
     @Constraints.Required(message = "Este campo é obrigatório.")
     public String nome;
     
@@ -47,7 +45,6 @@ public class Interessado extends Model{
         this.conhecimentoJava = cj;
     }
 
-
     public ConhecimentoJava getConhecimentoJava() {
         return conhecimentoJava;
     }
@@ -58,17 +55,12 @@ public class Interessado extends Model{
 
     public static Finder<Long, ConhecimentoJava> find = new Finder<Long,ConhecimentoJava>(ConhecimentoJava.class);
 
-
-        public List<ValidationError> validate() {
+    public List<ValidationError> validate() {
         List<ValidationError> errors = new ArrayList<ValidationError>();
         if (nome == null || nome.equals("")) {
             errors.add(new ValidationError("conhecimeentoJava", "This e-mail is already registered."));
         }
         return errors.isEmpty() ? null : errors;
     }
-
-
-
-
 
 }

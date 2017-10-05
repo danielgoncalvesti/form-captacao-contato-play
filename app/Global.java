@@ -15,13 +15,12 @@ public class Global extends GlobalSettings {
     public void onStart(final Application app) {
         Logger.info("Aplicação inicializada...");
 
-
         List<ConhecimentoJava> list = ConhecimentoJava.find.findList();
         if (list.size() == 0) {
             ConhecimentoJavaHelper.salvar(new ConhecimentoJava(1, "Não tenho conhecimento"));
-            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(2, "Sei o que é mas nunca utilizei"));
-            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(3, "Sei o básico"));
-            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(4, "Sei programar bem na linguagem"));
+            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(2, "Básico"));
+            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(3, "Intermediário"));
+            ConhecimentoJavaHelper.salvar(new ConhecimentoJava(4, "Avançado"));
         }
     }
 

@@ -1,5 +1,4 @@
+/filters/
 /models/
-/Global.class
 /views/
-/evolutions/
-/controllers/
+/prod.conf
