@@ -34,7 +34,7 @@ Seq[Any](format.raw/*1.32*/("""
 """),format.raw/*3.1*/("""<!DOCTYPE html>
 <html>
 <head>
-    <title>play-example-form</title>
+    <title>Curso de Scala</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=""""),_display_(/*8.35*/routes/*8.41*/.Assets.at("stylesheets/bootstrap.min.css")),format.raw/*8.84*/("""">
 
@@ -56,7 +56,7 @@ Seq[Any](format.raw/*1.32*/("""
                 <!--  Display three horizontal lines when navbar collapsed. -->
                 <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">play-example-form</a>
+            <a class="navbar-brand" href="/">Curso de Scala</a>
         </div>
     </div>
 </div>
@@ -93,10 +93,10 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 05 00:34:24 BRT 2017
+                  DATE: Thu Oct 05 00:40:08 BRT 2017
                   SOURCE: /Users/danielgoncalvesti/devel/form-captacao-contato-play/app/views/main.scala.html
-                  HASH: ddefbbf2a716d22cfa426559624320f8a4f45f13
-                  MATRIX: 748->1|873->31|901->33|1103->209|1117->215|1180->258|1325->376|1340->382|1395->416|1479->473|1494->479|1547->511|2449->1387|2476->1394|2504->1395|2545->1409|2560->1415|2620->1454|2673->1480|2688->1486|2751->1528|2987->1736|3016->1737|3052->1746|3114->1781|3142->1782
+                  HASH: dd80490eb63249fef8ec6e47b4b51b2d55bcf804
+                  MATRIX: 748->1|873->31|901->33|1100->206|1114->212|1177->255|1322->373|1337->379|1392->413|1476->470|1491->476|1544->508|2443->1381|2470->1388|2498->1389|2539->1403|2554->1409|2614->1448|2667->1474|2682->1480|2745->1522|2981->1730|3010->1731|3046->1740|3108->1775|3136->1776
                   LINES: 27->1|32->1|34->3|39->8|39->8|39->8|42->11|42->11|42->11|43->12|43->12|43->12|64->33|64->33|65->34|65->34|65->34|65->34|66->35|66->35|66->35|70->39|70->39|71->40|72->41|72->41
                   -- GENERATED --
               */

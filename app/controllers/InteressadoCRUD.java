@@ -47,7 +47,10 @@ public class InteressadoCRUD extends Controller {
             return badRequest(views.html.index.render("Index", form));
         }
     	InteressadoHelper.salvar(form.get());
-    	flash("success", form.get().nome + " sua inscrição foi realizada com sucesso!");
+    	Logger.info("--Inscrição Realizada--");
+    	Logger.info("NOME: "+form.get().nome + " " + "EMAIL: "+ form.get().email);
+    	Logger.info("-----------------------");
+    	flash("success", "Inscrição  realizada com sucesso!");
         return redirect ("/");
         //return ok(views.html.index.render("Index", form));
     }

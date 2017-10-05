@@ -3,3 +3,4 @@ playGenerateSecret
 git add .
 stage
 exit'
+run
