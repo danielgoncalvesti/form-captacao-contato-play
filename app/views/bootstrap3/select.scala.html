@@ -12,7 +12,7 @@
         	<option class="blank" value="null"{selected}>Selecione seu nível</option>
         }
         @for((idCJ, isSelected) <- optionMap) {
-          <option id="@idCJ" value="@idCJ" @if(idCJ.toString == field.value.get){selected="selected"} >@isSelected</option>
+          <option id="@idCJ" value="@idCJ" @if(idCJ.toString == field.value.getOrElse("0")){selected="selected"} >@isSelected - @idCJ.toString</option>
           
         }
         
