@@ -83,7 +83,7 @@ Seq[Any](format.raw/*1.30*/("""
 object fieldset extends fieldset_Scope0.fieldset
               /*
                   -- GENERATED --
-                  DATE: Thu Oct 05 10:48:03 BRT 2017
+                  DATE: Thu Oct 05 18:54:36 BRT 2017
                   SOURCE: /home/ufabc/devel/form-captacao-contato-play/app/views/fieldset.scala.html
                   HASH: c933651be12f0ccb279c0931f5f14a474b15dfc2
                   MATRIX: 762->1|915->29|943->63|1107->201|1260->333|1293->340|1448->474|1481->480|1525->498|1734->686|1767->692

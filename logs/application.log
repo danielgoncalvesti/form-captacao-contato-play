@@ -1,0 +1,9 @@
+2017-10-05 19:19:25,336 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-10-05 19:19:25,439 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
+2017-10-05 19:19:25,947 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-10-05T22:19:25.946Z
+2017-10-05 19:19:26,128 [INFO] from application in ForkJoinPool-1-worker-1 - Aplicação inicializada...
+2017-10-05 19:19:26,179 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-10-05 19:19:36,526 [WARN] from play in application-akka.actor.default-dispatcher-2 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:23:07,027 [INFO] from application in pool-7-thread-3 - Aplicação finalizada
+2017-10-05 19:23:07,066 [INFO] from application in pool-7-thread-3 - ApplicationTimer demo: Stopping application at 2017-10-05T22:23:07.065Z after 222s.
+2017-10-05 19:23:07,069 [INFO] from application in pool-7-thread-3 - Shutting down connection pool.

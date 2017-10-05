@@ -21,7 +21,6 @@ public class FormCreator {
         factory = new FormFactory(msgAPI, formatador, validador);
     }
 
-
     // getters e setters
     public MessagesApi getmsgAPI() {
         return msgAPI;

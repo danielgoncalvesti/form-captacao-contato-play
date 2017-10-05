@@ -1,13 +1,11 @@
 package models;
 
 import javax.persistence.*;
-import javax.validation.Constraint;
 import play.data.validation.Constraints;
 import com.avaje.ebean.Model;
 import play.data.validation.ValidationError;
 import java.util.ArrayList;
 import java.util.List;
-
 
 /**
  * Created by danielgoncalvesti on 17/05/17.
@@ -48,7 +46,7 @@ public class Interessado extends Model{
         this.conhecimentoJava = conhecimentoJava;
     }
 
-    public static Finder<Long, ConhecimentoJava> find = new Finder<Long,ConhecimentoJava>(ConhecimentoJava.class);
+    public static Finder<Long, Interessado> find = new Finder<Long,Interessado>(Interessado.class);
 
     public List<ValidationError> validate() {
         List<ValidationError> errors = new ArrayList<ValidationError>();

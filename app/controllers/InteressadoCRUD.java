@@ -2,24 +2,13 @@ package controllers;
 
 
 import javax.inject.Inject;
-
 import models.Interessado;
 import models.InteressadoHelper;
 import play.Logger;
-
 import play.data.Form;
-import play.data.FormFactory;
-import play.data.format.Formatters;
-import play.data.validation.ValidationError;
-import play.i18n.MessagesApi;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.defaultpages.error;
 import views.html.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by danielgoncalvesti on 17/05/17.
@@ -42,8 +31,12 @@ public class InteressadoCRUD extends Controller {
         Form<Interessado> form = Form.form(Interessado.class).bindFromRequest();
 
         if(form.hasErrors()){
-
             flash("error", "Por favor, complete os campos abaixo!");
+            return badRequest(views.html.index.render("Index", form));
+        }
+        //verifica se email já está cadastrado
+        if(InteressadoHelper.getInteressadoByEmail(form.get().email) != null){
+            flash("error", "Email já cadastrado!");
             return badRequest(views.html.index.render("Index", form));
         }
     	InteressadoHelper.salvar(form.get());
@@ -51,10 +44,9 @@ public class InteressadoCRUD extends Controller {
     	Logger.info("NOME: "+form.get().nome + " " + "EMAIL: "+ form.get().email);
     	Logger.info("-----------------------");
     	flash("success", "Inscrição  realizada com sucesso!");
-        return redirect ("/");
-        //return ok(views.html.index.render("Index", form));
+        //return redirect ("/");
+        return ok(views.html.index.render("Index", form));
     }
-
 
 //    public static void validationErrorExamples() {
 //
