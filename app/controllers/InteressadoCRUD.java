@@ -35,7 +35,8 @@ public class InteressadoCRUD extends Controller {
             return badRequest(views.html.index.render("Index", form));
         }
         //verifica se email já está cadastrado
-        if(InteressadoHelper.getInteressadoByEmail(form.get().email) != null){
+        System.out.println(InteressadoHelper.getInteressadoByEmail(form.get().email));
+        if(InteressadoHelper.getInteressadoByEmail(form.get().email).size() > 0){
             flash("error", "Email já cadastrado!");
             return badRequest(views.html.index.render("Index", form));
         }

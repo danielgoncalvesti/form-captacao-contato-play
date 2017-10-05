@@ -1,35 +1,15 @@
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
-[0m[[0mdebug[0m] [0m[naha] 	removed:Set(/home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java)[0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/home/ufabc/devel/form-captacao-contato-play/app/models/InteressadoHelper.java, /home/ufabc/devel/form-captacao-contato-play/app/controllers/InteressadoCRUD.java, /home/ufabc/devel/form-captacao-contato-play/app/models/Interessado.java)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/ufabc/devel/form-captacao-contato-play/app/models/InteressadoHelper.java, /home/ufabc/devel/form-captacao-contato-play/app/controllers/InteressadoCRUD.java, /home/ufabc/devel/form-captacao-contato-play/app/models/Interessado.java, /home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/ufabc/devel/form-captacao-contato-play/app/models/InteressadoHelper.java, /home/ufabc/devel/form-captacao-contato-play/app/controllers/InteressadoCRUD.java, /home/ufabc/devel/form-captacao-contato-play/app/models/Interessado.java, /home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java)[0m
-[0m[[0minfo[0m] [0mCompiling 3 Java sources to /home/ufabc/devel/form-captacao-contato-play/target/scala-2.11/classes...[0m
-[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@130ec9ba directly...[0m
-[0m[[0minfo[0m] [0m/home/ufabc/devel/form-captacao-contato-play/app/controllers/InteressadoCRUD.java: /home/ufabc/devel/form-captacao-contato-play/app/controllers/InteressadoCRUD.java uses or overrides a deprecated API.[0m
-[0m[[0minfo[0m] [0m/home/ufabc/devel/form-captacao-contato-play/app/controllers/InteressadoCRUD.java: Recompile with -Xlint:deprecation for details.[0m
-[0m[[0mdebug[0m] [0mJava compilation took 0.095253228 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.103111303 s[0m
-[0m[[0mdebug[0m] [0mJava compile + analysis took 0.200003435 s[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating /home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java...[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java...[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java)[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java)[0m
-[0m[[0mdebug[0m] [0m[naha] The /home/ufabc/devel/form-captacao-contato-play/app/controllers/CountController.java source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	enumerator, notify, FROM, movedPermanently, CONTENT_LANGUAGE, CREATED, temporaryRedirect, Results$StringChunks$WhenReadyStringChunks, WARNING, CONTINUE, SET_COOKIE2, permanentRedirect, count, CONTENT_DISPOSITION, channel, CONTENT_TYPE, badRequest, wait, ACCESS_CONTROL_ALLOW_METHODS, USER_AGENT, ctx, HOST, CONTENT_MD5, request, X_FORWARDED_PORT, paymentRequired, BAD_REQUEST, MAX_FORWARDS, X_FORWARDED_HOST, redirect, TRAILER, PROXY_AUTHENTICATE, AUTHORIZATION, CACHE_CONTROL, NOT_IMPLEMENTED, equals, PAYMENT_REQUIRED, RETRY_AFTER, PRECONDITION_FAILED, CONFLICT, ACCEPT_CHARSET, Results$ByteChunks$WhenReadyByteChunks, onReady, VIA, REQUEST_TIMEOUT, MULTIPLE_CHOICES, notFound, MOVED_PERMANENTLY, TE, CONTENT_LOCATION, PARTIAL_CONTENT, INSUFFICIENT_STORAGE, ETAG, LENGTH_REQUIRED, UNAUTHORIZED, UNSUPPORTED_MEDIA_TYPE, REFERER, REQUEST_ENTITY_TOO_LARGE, ORIGIN, ACCEPT_LANGUAGE, NOT_MODIFIED, Results$StringChunks, CountController, HTTP_VERSION_NOT_SUPPORTED, ACCESS_CONTROL_ALLOW_ORIGIN, IF_RANGE, IF_UNMODIFIED_SINCE, SWITCHING_PROTOCOLS, TEMPORARY_REDIRECT, CONTENT_LENGTH, SET_COOKIE, notifyAll, AGE, BAD_GATEWAY, EXPECTATION_FAILED, CONNECTION, FORWARDED, Results$ByteChunks, Results$Chunks$Out, OK, ACCESS_CONTROL_ALLOW_HEADERS, found, unauthorized, response, FOUND, <init>, DATE, CONTENT_RANGE, TRANSFER_ENCODING, PERMANENT_REDIRECT, TOO_MANY_REQUESTS, PROXY_AUTHORIZATION, GONE, ACCESS_CONTROL_ALLOW_CREDENTIALS, clearLang, NOT_ACCEPTABLE, status, EXPECT, LOCATION, VARY, WWW_AUTHENTICATE, TODO, forbidden, X_FORWARDED_FOR, access$000, ACCEPTED, NO_CONTENT, disconnected, INTERNAL_SERVER_ERROR, onDisconnected, UPGRADE, NOT_FOUND, session, ACCEPT_ENCODING, EXPIRES, seeOther, REQUESTED_RANGE_NOT_SATISFIABLE, UPGRADE_REQUIRED, toString, ACCEPT, changeLang, GATEWAY_TIMEOUT, whenReady, SERVER, ACCESS_CONTROL_REQUEST_METHOD, UNPROCESSABLE_ENTITY, ACCESS_CONTROL_MAX_AGE, LAST_MODIFIED, ACCESS_CONTROL_EXPOSE_HEADERS, ACCESS_CONTROL_REQUEST_HEADERS, flash, internalServerError, ok, ALLOW, COOKIE, IF_MODIFIED_SINCE, getClass, CONTENT_TRANSFER_ENCODING, lang, NON_AUTHORITATIVE_INFORMATION, close, PRAGMA, IF_MATCH, PROXY_AUTHENTICATION_REQUIRED, RESET_CONTENT, SEE_OTHER, FAILED_DEPENDENCY, CONTENT_ENCODING, RANGE, USE_PROXY, Results$Chunks, REQUEST_URI_TOO_LONG, writable, LOCKED, FORBIDDEN, METHOD_NOT_ALLOWED, write, IF_NONE_MATCH, ACCEPT_RANGES, noContent, X_REQUESTED_WITH, X_FORWARDED_PROTO, MULTI_STATUS, SERVICE_UNAVAILABLE, created, hashCode.[0m
-[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
-[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
-[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m

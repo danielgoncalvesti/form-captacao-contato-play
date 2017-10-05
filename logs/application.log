@@ -1,9 +1,36 @@
-2017-10-05 19:19:25,336 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-10-05 19:19:25,439 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 19:19:25,947 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-10-05T22:19:25.946Z
-2017-10-05 19:19:26,128 [INFO] from application in ForkJoinPool-1-worker-1 - Aplicação inicializada...
-2017-10-05 19:19:26,179 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-10-05 19:19:36,526 [WARN] from play in application-akka.actor.default-dispatcher-2 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-10-05 19:23:07,027 [INFO] from application in pool-7-thread-3 - Aplicação finalizada
-2017-10-05 19:23:07,066 [INFO] from application in pool-7-thread-3 - ApplicationTimer demo: Stopping application at 2017-10-05T22:23:07.065Z after 222s.
-2017-10-05 19:23:07,069 [INFO] from application in pool-7-thread-3 - Shutting down connection pool.
+2017-10-05 19:27:38,537 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-10-05 19:27:38,633 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
+2017-10-05 19:27:39,104 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-10-05T22:27:39.104Z
+2017-10-05 19:27:39,263 [INFO] from application in ForkJoinPool-1-worker-1 - Aplicação inicializada...
+2017-10-05 19:27:39,307 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-10-05 19:27:44,234 [WARN] from play in application-akka.actor.default-dispatcher-9 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:27:46,911 [WARN] from play in application-akka.actor.default-dispatcher-3 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:27:50,449 [WARN] from play in application-akka.actor.default-dispatcher-3 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:27:58,946 [WARN] from play in application-akka.actor.default-dispatcher-7 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:28:04,140 [WARN] from play in application-akka.actor.default-dispatcher-11 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:28:08,673 [WARN] from play in application-akka.actor.default-dispatcher-11 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:28:21,227 [WARN] from play in application-akka.actor.default-dispatcher-9 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:29:00,224 [INFO] from application in application-akka.actor.default-dispatcher-8 - Aplicação finalizada
+2017-10-05 19:29:00,247 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2017-10-05T22:29:00.246Z after 81s.
+2017-10-05 19:29:00,250 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2017-10-05 19:29:00,339 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2017-10-05 19:29:00,347 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
+2017-10-05 19:29:00,396 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2017-10-05T22:29:00.395Z
+2017-10-05 19:29:00,438 [INFO] from application in application-akka.actor.default-dispatcher-8 - Aplicação inicializada...
+2017-10-05 19:29:00,439 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2017-10-05 19:29:00,484 [WARN] from play in application-akka.actor.default-dispatcher-4 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:29:48,319 [INFO] from application in application-akka.actor.default-dispatcher-7 - Aplicação finalizada
+2017-10-05 19:29:48,328 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Stopping application at 2017-10-05T22:29:48.328Z after 48s.
+2017-10-05 19:29:48,328 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2017-10-05 19:29:48,416 [INFO] from application in application-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2017-10-05 19:29:48,423 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
+2017-10-05 19:29:48,468 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2017-10-05T22:29:48.468Z
+2017-10-05 19:29:48,508 [INFO] from application in application-akka.actor.default-dispatcher-7 - Aplicação inicializada...
+2017-10-05 19:29:48,510 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2017-10-05 19:29:48,576 [INFO] from application in application-akka.actor.default-dispatcher-2 - --Inscrição Realizada--
+2017-10-05 19:29:48,576 [INFO] from application in application-akka.actor.default-dispatcher-2 - NOME: Daniel Gonçalves da Silva EMAIL: danielgoncalv1111e@gmail.com
+2017-10-05 19:29:48,576 [INFO] from application in application-akka.actor.default-dispatcher-2 - -----------------------
+2017-10-05 19:29:48,590 [WARN] from play in application-akka.actor.default-dispatcher-2 - You are using status code '200' with flashing, which should only be used with a redirect status!
+2017-10-05 19:29:52,517 [WARN] from play in application-akka.actor.default-dispatcher-8 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:29:53,740 [WARN] from play in application-akka.actor.default-dispatcher-9 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 19:29:56,410 [WARN] from play in application-akka.actor.default-dispatcher-10 - You are using status code '400' with flashing, which should only be used with a redirect status!
