@@ -8,11 +8,14 @@
         id="@field.id"
         name="@if(isMultiple) {@(field.name + "[]")} else {@field.name}"
         @if(isMultiple) {multiple="multiple"}>
-        @if(!isMultiple) {<option class="blank" value="null"{selected}>Selecione seu nível</option>}
-        @for((idCJ, isSelected) <- optionMap) {
-          <option id="@idCJ" value="@idCJ">@isSelected</option>
+        @if(!isMultiple) {
+        	<option class="blank" value="null"{selected}>Selecione seu nível</option>
         }
-
+        @for((idCJ, isSelected) <- optionMap) {
+          <option id="@idCJ" value="@idCJ" @if(idCJ.toString == field.value.get){selected="selected"} >@isSelected</option>
+          
+        }
+        
       </select>
       <span class="help-block">@help</span>
       <!--<span class="help-block">@{field.error.map { error => error.message }}</span>-->

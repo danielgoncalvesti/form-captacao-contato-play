@@ -1,0 +1,4 @@
+[0m[[31merror[0m] [0m/home/ufabc/devel/form-captacao-contato-play/app/views/bootstrap3/select.scala.html:16: Invalid '@' symbol[0m
+[0m[[31merror[0m] [0m   *@     @for((idCJ, isSelected) <- optionMap) {[0m
+[0m[[31merror[0m] [0m    ^[0m
+[0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m
