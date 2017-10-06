@@ -32,12 +32,14 @@ public class InteressadoCRUD extends Controller {
         Form<Interessado> form = Form.form(Interessado.class).bindFromRequest();
 
         if(form.hasErrors()){
-            flash("error", "Formulário incompleto! ; Por favor, complete os campos abaixo.");
+        	flash().clear();
+        	flash("error", "Formulário incompleto! ; Por favor, complete os campos abaixo.");
             return badRequest(views.html.index.render("Index", form));
         }
         //verifica se email já está cadastrado
         if(InteressadoHelper.getInteressadoByEmail(form.get().email).size() > 0){
-            flash("error", "Email já cadastrado! ; Tente outro email.");
+        	flash().clear();
+        	flash("error", "Email já cadastrado! ; Tente outro email.");
             return badRequest(views.html.index.render("Index", form));
         }
     	InteressadoHelper.salvar(form.get());

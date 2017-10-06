@@ -21,7 +21,7 @@ public class Interessado extends Model{
     public String nome;
     
     @Constraints.Required(message = "Este campo é obrigatório.")
-    @Constraints.Email(message = "Por favor, adicione um email válido.")
+    @Constraints.Email(message = "")
     public String email;
     
 //    @Constraints.Required

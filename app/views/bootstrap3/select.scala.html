@@ -13,7 +13,6 @@
         }
         @for((idCJ, isSelected) <- optionMap) {
           <option id="@idCJ" value="@idCJ" @if(idCJ.toString == field.value.getOrElse("0")){selected="selected"} >@isSelected</option>
-          
         }
         
       </select>
