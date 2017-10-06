@@ -2,6 +2,7 @@ package controllers;
 
 
 import javax.inject.Inject;
+
 import models.Interessado;
 import models.InteressadoHelper;
 import play.Logger;
@@ -31,12 +32,12 @@ public class InteressadoCRUD extends Controller {
         Form<Interessado> form = Form.form(Interessado.class).bindFromRequest();
 
         if(form.hasErrors()){
-            flash("error", "Por favor, complete os campos abaixo!");
+            flash("error", "Formulário incompleto! ; Por favor, complete os campos abaixo.");
             return badRequest(views.html.index.render("Index", form));
         }
         //verifica se email já está cadastrado
         if(InteressadoHelper.getInteressadoByEmail(form.get().email).size() > 0){
-            flash("error", "Email já cadastrado!");
+            flash("error", "Email já cadastrado! ; Tente outro email.");
             return badRequest(views.html.index.render("Index", form));
         }
     	InteressadoHelper.salvar(form.get());
@@ -46,7 +47,7 @@ public class InteressadoCRUD extends Controller {
     	
     	flash().clear();
     	//flash("error", "");
-    	flash("success", "Inscrição  realizada com sucesso!");
+    	flash("success", "Inscrição  realizada! ; Aguarde, em breve comunicaremos com você por email.");
         //return redirect ("/");
     	return ok(views.html.index.render("Index", form));
     }

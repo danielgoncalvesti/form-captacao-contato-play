@@ -6,22 +6,29 @@
 
 @main("Inscrição do Workshop do PlayFramework") {
 <div class="container">
+    
     @if(flash.containsKey("success")) {
-    <div class="well">
+    <div class="well col-centered" id="form-box">
         <div id="success-message" class="text-success">
-            @flash.get("success")
+            <div class="alert alert-success alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              <strong>@flash.get("success").split(";")(0)</strong> @flash.get("success").split(";")(1)
+            </div>    
         </div>
     </div>
     }
     @if(flash.containsKey("error")) {
-    <div class="well">
-        <div id="error-message" class="text-danger">
-            @flash.get("error")
+    <div class="well col-centered" id="form-box">
+        <div id="error-message" class="text-danger has-error">
+			<div class="alert alert-danger">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              <strong>@flash.get("error").split(";")(0)</strong> @flash.get("error").split(";")(1)
+            </div>
         </div>
     </div>
     }
-
-    <div class="well">
+    
+    <div class="well col-centered" id="form-box">
         @form(routes.InteressadoCRUD.add(), 'class -> "form-vertical") {
             @fieldset(intForm)
         }
