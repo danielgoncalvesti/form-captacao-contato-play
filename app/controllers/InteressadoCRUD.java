@@ -25,6 +25,7 @@ public class InteressadoCRUD extends Controller {
 
     public Result index(){
         Form<Interessado> form = Form.form(Interessado.class);
+        flash().clear();
         return ok(views.html.index.render("Index", form));
     }
 
@@ -48,7 +49,6 @@ public class InteressadoCRUD extends Controller {
     	Logger.info("-----------------------");
     	
     	flash().clear();
-    	//flash("error", "");
     	flash("success", "Inscrição  realizada! ; Aguarde, em breve comunicaremos com você por email.");
         return redirect("/");
     	//return ok(views.html.index.render("Index", newForm));
