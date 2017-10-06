@@ -1,7 +1,2 @@
-/filters/
-/models/
-/views/
-/prod.conf
-/evolutions/
 /controllers/
-/services/
+/views/

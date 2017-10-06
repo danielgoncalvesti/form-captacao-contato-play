@@ -43,9 +43,12 @@ public class InteressadoCRUD extends Controller {
     	Logger.info("--Inscrição Realizada--");
     	Logger.info("NOME: "+form.get().nome + " " + "EMAIL: "+ form.get().email);
     	Logger.info("-----------------------");
+    	
+    	flash().clear();
+    	//flash("error", "");
     	flash("success", "Inscrição  realizada com sucesso!");
         //return redirect ("/");
-        return ok(views.html.index.render("Index", form));
+    	return ok(views.html.index.render("Index", form));
     }
 
 //    public static void validationErrorExamples() {

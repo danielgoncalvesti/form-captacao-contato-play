@@ -1,72 +1,19 @@
-2017-10-05 20:36:43,304 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-10-05 20:36:43,399 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:36:44,043 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-10-05T23:36:44.043Z
-2017-10-05 20:36:44,096 [ERROR] from application in netty-event-loop-3 - 
+2017-10-05 21:29:14,845 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-10-05 21:29:14,919 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
+2017-10-05 21:29:15,314 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-10-06T00:29:15.314Z
+2017-10-05 21:29:15,437 [INFO] from application in ForkJoinPool-1-worker-1 - Aplicação inicializada...
+2017-10-05 21:29:15,473 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-10-05 21:29:18,591 [WARN] from play in application-akka.actor.default-dispatcher-7 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:29:24,110 [WARN] from play in application-akka.actor.default-dispatcher-5 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:29:26,745 [INFO] from application in application-akka.actor.default-dispatcher-7 - --Inscrição Realizada--
+2017-10-05 21:29:26,745 [INFO] from application in application-akka.actor.default-dispatcher-7 - NOME: Daniel Gonçalves da Silva EMAIL: danielgoncalvest2i@gmail.com
+2017-10-05 21:29:26,745 [INFO] from application in application-akka.actor.default-dispatcher-7 - -----------------------
+2017-10-05 21:29:26,749 [WARN] from play in application-akka.actor.default-dispatcher-7 - You are using status code '200' with flashing, which should only be used with a redirect status!
+2017-10-05 21:29:26,759 [ERROR] from application in application-akka.actor.default-dispatcher-7 - 
 
-! @75h3nldgn - Internal server error, for (GET) [/] ->
+! @75h44jc77 - Internal server error, for (POST) [/add] ->
  
-play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
-	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)
-	at play.api.db.evolutions.ApplicationEvolutions.withLock(ApplicationEvolutions.scala:99)
-	at play.api.db.evolutions.ApplicationEvolutions.play$api$db$evolutions$ApplicationEvolutions$$runEvolutions(ApplicationEvolutions.scala:49)
-	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$start$1.apply(ApplicationEvolutions.scala:42)
-	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$start$1.apply(ApplicationEvolutions.scala:42)
-	at scala.collection.immutable.List.foreach(List.scala:381)
-	at play.api.db.evolutions.ApplicationEvolutions.start(ApplicationEvolutions.scala:42)
-	at play.api.db.evolutions.ApplicationEvolutions.<init>(ApplicationEvolutions.scala:150)
-	at play.api.db.evolutions.ApplicationEvolutionsProvider.get$lzycompute(EvolutionsModule.scala:53)
-	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:53)
-	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:44)
-	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
-	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
-	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
-	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
-	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
-	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
-	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
-	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
-	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
-	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
-	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
-	at com.google.inject.Guice.createInjector(Guice.java:96)
-	at com.google.inject.Guice.createInjector(Guice.java:84)
-	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
-	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
-	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
-	at scala.Option.map(Option.scala:146)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
-	at scala.util.Success.flatMap(Try.scala:231)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-10-05 20:36:47,831 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Stopping application at 2017-10-05T23:36:47.830Z after 3s.
-2017-10-05 20:36:47,836 [INFO] from application in ForkJoinPool-1-worker-1 - Shutting down connection pool.
-2017-10-05 20:36:47,938 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-10-05 20:36:47,953 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:36:47,990 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-10-05T23:36:47.990Z
-2017-10-05 20:36:48,098 [INFO] from application in ForkJoinPool-1-worker-1 - Aplicação inicializada...
-2017-10-05 20:36:48,178 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2017-10-05 20:36:48,591 [ERROR] from application in application-akka.actor.default-dispatcher-4 - 
-
-! @75h3nlkba - Internal server error, for (GET) [/] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: None.get]]
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
 	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
 	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
 	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
@@ -101,43 +48,37 @@ play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchEle
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.NoSuchElementException: None.get
-	at scala.None$.get(Option.scala:347)
-	at scala.None$.get(Option.scala:345)
-	at views.html.bootstrap3.select_Scope0$select$$anonfun$apply$2.apply(select.template.scala:46)
-	at views.html.bootstrap3.select_Scope0$select$$anonfun$apply$2.apply(select.template.scala:45)
-	at scala.collection.TraversableLike$WithFilter$$anonfun$map$2.apply(TraversableLike.scala:728)
-	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
-	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
-	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
-	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
-	at scala.collection.TraversableLike$WithFilter.map(TraversableLike.scala:727)
-	at views.html.bootstrap3.select_Scope0$select.apply(select.template.scala:45)
-	at views.html.fieldset_Scope0$fieldset.apply(fieldset.template.scala:53)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:56)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:55)
-	at views.html.helper.form_Scope0$form.apply(form.template.scala:35)
-	at views.html.index_Scope0$index.apply(index.template.scala:55)
-	at views.html.index_Scope0$index.render(index.template.scala:67)
-	at views.html.index.render(index.template.scala)
-	at controllers.InteressadoCRUD.index(InteressadoCRUD.java:27)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+Caused by: java.lang.NullPointerException: null
+	at java.net.URLEncoder.encode(URLEncoder.java:204)
+	at play.api.mvc.CookieBaker$$anonfun$4.apply(Http.scala:551)
+	at play.api.mvc.CookieBaker$$anonfun$4.apply(Http.scala:550)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+	at scala.collection.immutable.Map$Map2.foreach(Map.scala:137)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104)
+	at play.api.mvc.CookieBaker$class.encode(Http.scala:550)
+	at play.api.mvc.Flash$.encode(Http.scala:778)
+	at play.api.mvc.CookieBaker$class.encodeAsCookie(Http.scala:606)
+	at play.api.mvc.Flash$.encodeAsCookie(Http.scala:778)
+	at play.api.mvc.Result.flashing(Results.scala:189)
+	at play.core.j.JavaHelpers$class.createResult(JavaHelpers.scala:69)
+	at play.core.j.JavaAction.createResult(JavaAction.scala:57)
+	at play.core.j.JavaAction$$anonfun$9.apply(JavaAction.scala:110)
+	at play.core.j.JavaAction$$anonfun$9.apply(JavaAction.scala:110)
+	at scala.util.Success$$anonfun$map$1.apply(Try.scala:237)
+	at scala.util.Try$.apply(Try.scala:192)
+	at scala.util.Success.map(Try.scala:237)
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235)
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
 	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
+	at scala.concurrent.impl.Promise$DefaultPromise.scala$concurrent$impl$Promise$DefaultPromise$$dispatchOrAddCallback(Promise.scala:280)
+	at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:270)
+	at scala.concurrent.Future$class.map(Future.scala:235)
+	at scala.concurrent.impl.Promise$DefaultPromise.map(Promise.scala:153)
+	at play.core.j.JavaAction.apply(JavaAction.scala:110)
 	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
 	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
 	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
@@ -148,12 +89,24 @@ Caused by: java.util.NoSuchElementException: None.get
 	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
 	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
 	... 14 common frames omitted
-2017-10-05 20:37:13,053 [ERROR] from application in netty-event-loop-3 - 
+2017-10-05 21:29:47,679 [INFO] from application in application-akka.actor.default-dispatcher-9 - Aplicação finalizada
+2017-10-05 21:29:47,705 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Stopping application at 2017-10-06T00:29:47.705Z after 32s.
+2017-10-05 21:29:47,708 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2017-10-05 21:29:47,791 [INFO] from application in application-akka.actor.default-dispatcher-9 - Creating Pool for datasource 'default'
+2017-10-05 21:29:47,796 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-9 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
+2017-10-05 21:29:47,819 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Starting application at 2017-10-06T00:29:47.818Z
+2017-10-05 21:29:47,852 [INFO] from application in application-akka.actor.default-dispatcher-9 - Aplicação inicializada...
+2017-10-05 21:29:47,853 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2017-10-05 21:29:47,893 [WARN] from play in application-akka.actor.default-dispatcher-2 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:29:51,080 [INFO] from application in application-akka.actor.default-dispatcher-4 - --Inscrição Realizada--
+2017-10-05 21:29:51,080 [INFO] from application in application-akka.actor.default-dispatcher-4 - NOME: Daniel Gonçalves da Silva EMAIL: danielgoncalve22st2i@gmail.com
+2017-10-05 21:29:51,080 [INFO] from application in application-akka.actor.default-dispatcher-4 - -----------------------
+2017-10-05 21:29:51,084 [WARN] from play in application-akka.actor.default-dispatcher-4 - You are using status code '200' with flashing, which should only be used with a redirect status!
+2017-10-05 21:36:06,167 [ERROR] from application in netty-event-loop-9 - 
 
-! @75h3nn4g4 - Internal server error, for (GET) [/] ->
+! @75h45g52g - Internal server error, for (POST) [/add] ->
  
-play.sbt.PlayExceptions$CompilationException: Compilation error[missing arguments for method getOrElse in class Option;
-follow this method with `_' if you want to treat it as a partially applied function]
+play.sbt.PlayExceptions$CompilationException: Compilation error[value getOrElse is not a member of String]
 	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
 	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
 	at scala.Option.map(Option.scala:145)
@@ -183,37 +136,11 @@ follow this method with `_' if you want to treat it as a partially applied funct
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2017-10-05 20:37:45,946 [INFO] from application in application-akka.actor.default-dispatcher-2 - Aplicação finalizada
-2017-10-05 20:37:45,967 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2017-10-05T23:37:45.967Z after 58s.
-2017-10-05 20:37:45,967 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2017-10-05 20:37:46,099 [INFO] from application in application-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
-2017-10-05 20:37:46,105 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:37:46,144 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Starting application at 2017-10-05T23:37:46.144Z
-2017-10-05 20:37:46,188 [INFO] from application in application-akka.actor.default-dispatcher-2 - Aplicação inicializada...
-2017-10-05 20:37:46,195 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
-2017-10-05 20:38:18,188 [INFO] from application in application-akka.actor.default-dispatcher-5 - Aplicação finalizada
-2017-10-05 20:38:18,198 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2017-10-05T23:38:18.198Z after 32s.
-2017-10-05 20:38:18,199 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2017-10-05 20:38:18,358 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
-2017-10-05 20:38:18,372 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:38:18,452 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2017-10-05T23:38:18.452Z
-2017-10-05 20:38:18,504 [INFO] from application in application-akka.actor.default-dispatcher-5 - Aplicação inicializada...
-2017-10-05 20:38:18,505 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
-2017-10-05 20:38:28,867 [INFO] from application in application-akka.actor.default-dispatcher-3 - Aplicação finalizada
-2017-10-05 20:38:28,874 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2017-10-05T23:38:28.874Z after 10s.
-2017-10-05 20:38:28,874 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2017-10-05 20:38:28,999 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
-2017-10-05 20:38:29,009 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:38:29,035 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-10-05T23:38:29.034Z
-2017-10-05 20:38:29,089 [INFO] from application in application-akka.actor.default-dispatcher-3 - Aplicação inicializada...
-2017-10-05 20:38:29,091 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
-2017-10-05 20:38:34,280 [WARN] from play in application-akka.actor.default-dispatcher-8 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-10-05 20:38:50,753 [ERROR] from application in netty-event-loop-1 - 
+2017-10-05 21:36:06,641 [ERROR] from application in netty-event-loop-10 - 
 
-! @75h3o2j3n - Internal server error, for (POST) [/add] ->
+! @75h45g5lc - Internal server error, for (GET) [/] ->
  
-play.sbt.PlayExceptions$CompilationException: Compilation error[not enough arguments for method apply: (index: Int)Char in class StringOps.
-Unspecified value parameter index.]
+play.sbt.PlayExceptions$CompilationException: Compilation error[value getOrElse is not a member of String]
 	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
 	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
 	at scala.Option.map(Option.scala:145)
@@ -243,368 +170,37 @@ Unspecified value parameter index.]
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2017-10-05 20:38:57,361 [INFO] from application in application-akka.actor.default-dispatcher-3 - Aplicação finalizada
-2017-10-05 20:38:57,369 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2017-10-05T23:38:57.369Z after 28s.
-2017-10-05 20:38:57,370 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2017-10-05 20:38:57,446 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
-2017-10-05 20:38:57,455 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:38:57,483 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-10-05T23:38:57.483Z
-2017-10-05 20:38:57,576 [INFO] from application in application-akka.actor.default-dispatcher-3 - Aplicação inicializada...
-2017-10-05 20:38:57,578 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
-2017-10-05 20:38:57,669 [WARN] from play in application-akka.actor.default-dispatcher-2 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-10-05 20:39:10,728 [INFO] from application in application-akka.actor.default-dispatcher-8 - Aplicação finalizada
-2017-10-05 20:39:10,737 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2017-10-05T23:39:10.737Z after 13s.
-2017-10-05 20:39:10,741 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
-2017-10-05 20:39:10,835 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
-2017-10-05 20:39:10,847 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:39:10,892 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2017-10-05T23:39:10.891Z
-2017-10-05 20:39:10,919 [INFO] from application in application-akka.actor.default-dispatcher-8 - Aplicação inicializada...
-2017-10-05 20:39:10,920 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
-2017-10-05 20:39:10,980 [WARN] from play in application-akka.actor.default-dispatcher-5 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-10-05 20:39:14,000 [WARN] from play in application-akka.actor.default-dispatcher-4 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-10-05 20:39:18,679 [ERROR] from application in application-akka.actor.default-dispatcher-9 - 
-
-! @75h3o48c0 - Internal server error, for (GET) [/] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: None.get]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.core.j.JavaGlobalSettingsAdapter.play$core$j$JavaGlobalSettingsAdapter$$super$onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at scala.Option.getOrElse(Option.scala:121)
-	at play.core.j.JavaGlobalSettingsAdapter.onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:304)
-	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:289)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.NoSuchElementException: None.get
-	at scala.None$.get(Option.scala:347)
-	at scala.None$.get(Option.scala:345)
-	at views.html.bootstrap3.select_Scope0$select.apply(select.template.scala:37)
-	at views.html.fieldset_Scope0$fieldset.apply(fieldset.template.scala:53)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:56)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:55)
-	at views.html.helper.form_Scope0$form.apply(form.template.scala:35)
-	at views.html.index_Scope0$index.apply(index.template.scala:55)
-	at views.html.index_Scope0$index.render(index.template.scala:67)
-	at views.html.index.render(index.template.scala)
-	at controllers.InteressadoCRUD.index(InteressadoCRUD.java:27)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	... 14 common frames omitted
-2017-10-05 20:39:20,716 [ERROR] from application in application-akka.actor.default-dispatcher-6 - 
-
-! @75h3o4bc9 - Internal server error, for (GET) [/] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: None.get]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.core.j.JavaGlobalSettingsAdapter.play$core$j$JavaGlobalSettingsAdapter$$super$onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at scala.Option.getOrElse(Option.scala:121)
-	at play.core.j.JavaGlobalSettingsAdapter.onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:304)
-	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:289)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.NoSuchElementException: None.get
-	at scala.None$.get(Option.scala:347)
-	at scala.None$.get(Option.scala:345)
-	at views.html.bootstrap3.select_Scope0$select.apply(select.template.scala:37)
-	at views.html.fieldset_Scope0$fieldset.apply(fieldset.template.scala:53)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:56)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:55)
-	at views.html.helper.form_Scope0$form.apply(form.template.scala:35)
-	at views.html.index_Scope0$index.apply(index.template.scala:55)
-	at views.html.index_Scope0$index.render(index.template.scala:67)
-	at views.html.index.render(index.template.scala)
-	at controllers.InteressadoCRUD.index(InteressadoCRUD.java:27)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	... 14 common frames omitted
-2017-10-05 20:39:21,355 [ERROR] from application in application-akka.actor.default-dispatcher-6 - 
-
-! @75h3o4cao - Internal server error, for (GET) [/] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: None.get]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.core.j.JavaGlobalSettingsAdapter.play$core$j$JavaGlobalSettingsAdapter$$super$onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at scala.Option.getOrElse(Option.scala:121)
-	at play.core.j.JavaGlobalSettingsAdapter.onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:304)
-	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:289)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.NoSuchElementException: None.get
-	at scala.None$.get(Option.scala:347)
-	at scala.None$.get(Option.scala:345)
-	at views.html.bootstrap3.select_Scope0$select.apply(select.template.scala:37)
-	at views.html.fieldset_Scope0$fieldset.apply(fieldset.template.scala:53)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:56)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:55)
-	at views.html.helper.form_Scope0$form.apply(form.template.scala:35)
-	at views.html.index_Scope0$index.apply(index.template.scala:55)
-	at views.html.index_Scope0$index.render(index.template.scala:67)
-	at views.html.index.render(index.template.scala)
-	at controllers.InteressadoCRUD.index(InteressadoCRUD.java:27)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	... 14 common frames omitted
-2017-10-05 20:40:19,391 [INFO] from application in application-akka.actor.default-dispatcher-5 - Aplicação finalizada
-2017-10-05 20:40:19,406 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2017-10-05T23:40:19.406Z after 69s.
-2017-10-05 20:40:19,407 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2017-10-05 20:40:19,490 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
-2017-10-05 20:40:19,496 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:40:19,516 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2017-10-05T23:40:19.516Z
-2017-10-05 20:40:19,553 [INFO] from application in application-akka.actor.default-dispatcher-5 - Aplicação inicializada...
-2017-10-05 20:40:19,555 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
-2017-10-05 20:40:19,596 [ERROR] from application in application-akka.actor.default-dispatcher-5 - 
-
-! @75h3o7kep - Internal server error, for (GET) [/] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoSuchElementException: None.get]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.core.j.JavaGlobalSettingsAdapter.play$core$j$JavaGlobalSettingsAdapter$$super$onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at play.core.j.JavaGlobalSettingsAdapter$$anonfun$onError$2.apply(JavaGlobalSettingsAdapter.scala:35)
-	at scala.Option.getOrElse(Option.scala:121)
-	at play.core.j.JavaGlobalSettingsAdapter.onError(JavaGlobalSettingsAdapter.scala:35)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:304)
-	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:289)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.NoSuchElementException: None.get
-	at scala.None$.get(Option.scala:347)
-	at scala.None$.get(Option.scala:345)
-	at views.html.bootstrap3.select_Scope0$select.apply(select.template.scala:37)
-	at views.html.fieldset_Scope0$fieldset.apply(fieldset.template.scala:53)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:56)
-	at views.html.index_Scope0$index$$anonfun$apply$1.apply(index.template.scala:55)
-	at views.html.helper.form_Scope0$form.apply(form.template.scala:35)
-	at views.html.index_Scope0$index.apply(index.template.scala:55)
-	at views.html.index_Scope0$index.render(index.template.scala:67)
-	at views.html.index.render(index.template.scala)
-	at controllers.InteressadoCRUD.index(InteressadoCRUD.java:27)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.apply(Routes.scala:113)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
-	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	... 14 common frames omitted
-2017-10-05 20:40:37,513 [INFO] from application in application-akka.actor.default-dispatcher-6 - Aplicação finalizada
-2017-10-05 20:40:37,515 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Stopping application at 2017-10-05T23:40:37.515Z after 18s.
-2017-10-05 20:40:37,515 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2017-10-05 20:40:37,582 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2017-10-05 20:40:37,603 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:40:37,648 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Starting application at 2017-10-05T23:40:37.648Z
-2017-10-05 20:40:37,680 [INFO] from application in application-akka.actor.default-dispatcher-6 - Aplicação inicializada...
-2017-10-05 20:40:37,681 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
-2017-10-05 20:40:46,001 [INFO] from application in application-akka.actor.default-dispatcher-4 - Aplicação finalizada
-2017-10-05 20:40:46,013 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-10-05T23:40:46.013Z after 9s.
-2017-10-05 20:40:46,014 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2017-10-05 20:40:46,071 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
-2017-10-05 20:40:46,080 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:40:46,119 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-10-05T23:40:46.119Z
-2017-10-05 20:40:46,154 [INFO] from application in application-akka.actor.default-dispatcher-4 - Aplicação inicializada...
-2017-10-05 20:40:46,158 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
-2017-10-05 20:40:48,612 [WARN] from play in application-akka.actor.default-dispatcher-4 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-10-05 20:40:50,666 [WARN] from play in application-akka.actor.default-dispatcher-2 - You are using status code '400' with flashing, which should only be used with a redirect status!
-2017-10-05 20:41:10,492 [INFO] from application in application-akka.actor.default-dispatcher-8 - Aplicação finalizada
-2017-10-05 20:41:10,505 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2017-10-05T23:41:10.505Z after 24s.
-2017-10-05 20:41:10,506 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
-2017-10-05 20:41:10,581 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
-2017-10-05 20:41:10,588 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
-2017-10-05 20:41:10,661 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2017-10-05T23:41:10.661Z
-2017-10-05 20:41:10,716 [INFO] from application in application-akka.actor.default-dispatcher-8 - Aplicação inicializada...
-2017-10-05 20:41:10,717 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2017-10-05 21:36:16,154 [INFO] from application in application-akka.actor.default-dispatcher-7 - Aplicação finalizada
+2017-10-05 21:36:16,160 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Stopping application at 2017-10-06T00:36:16.160Z after 389s.
+2017-10-05 21:36:16,161 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2017-10-05 21:36:16,234 [INFO] from application in application-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2017-10-05 21:36:16,238 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:postgresql://localhost:5432/formularioemail
+2017-10-05 21:36:16,257 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2017-10-06T00:36:16.257Z
+2017-10-05 21:36:16,288 [INFO] from application in application-akka.actor.default-dispatcher-7 - Aplicação inicializada...
+2017-10-05 21:36:16,289 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2017-10-05 21:36:21,745 [WARN] from play in application-akka.actor.default-dispatcher-5 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:36:24,401 [INFO] from application in application-akka.actor.default-dispatcher-3 - --Inscrição Realizada--
+2017-10-05 21:36:24,401 [INFO] from application in application-akka.actor.default-dispatcher-3 - NOME: Daniel Gonçalves da Silva EMAIL: danielgoncalvesti1@gmail.com
+2017-10-05 21:36:24,401 [INFO] from application in application-akka.actor.default-dispatcher-3 - -----------------------
+2017-10-05 21:36:24,404 [WARN] from play in application-akka.actor.default-dispatcher-3 - You are using status code '200' with flashing, which should only be used with a redirect status!
+2017-10-05 21:36:27,804 [INFO] from application in application-akka.actor.default-dispatcher-6 - --Inscrição Realizada--
+2017-10-05 21:36:27,804 [INFO] from application in application-akka.actor.default-dispatcher-6 - NOME: Daniel Gonçalves da Silva EMAIL: danielgoncalvesti1231@gmail.com
+2017-10-05 21:36:27,804 [INFO] from application in application-akka.actor.default-dispatcher-6 - -----------------------
+2017-10-05 21:36:27,807 [WARN] from play in application-akka.actor.default-dispatcher-6 - You are using status code '200' with flashing, which should only be used with a redirect status!
+2017-10-05 21:36:34,426 [WARN] from play in application-akka.actor.default-dispatcher-7 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:36:37,003 [WARN] from play in application-akka.actor.default-dispatcher-7 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:36:39,945 [INFO] from application in application-akka.actor.default-dispatcher-16 - --Inscrição Realizada--
+2017-10-05 21:36:39,945 [INFO] from application in application-akka.actor.default-dispatcher-16 - NOME: Daniel Gonçalves da Silva EMAIL: danielgoncalvest55i@gmail.com
+2017-10-05 21:36:39,945 [INFO] from application in application-akka.actor.default-dispatcher-16 - -----------------------
+2017-10-05 21:36:39,948 [WARN] from play in application-akka.actor.default-dispatcher-16 - You are using status code '200' with flashing, which should only be used with a redirect status!
+2017-10-05 21:37:02,721 [WARN] from play in application-akka.actor.default-dispatcher-15 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:37:07,121 [WARN] from play in application-akka.actor.default-dispatcher-12 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:37:09,440 [WARN] from play in application-akka.actor.default-dispatcher-18 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:37:11,247 [WARN] from play in application-akka.actor.default-dispatcher-18 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-10-05 21:37:14,157 [INFO] from application in application-akka.actor.default-dispatcher-18 - --Inscrição Realizada--
+2017-10-05 21:37:14,157 [INFO] from application in application-akka.actor.default-dispatcher-18 - NOME: Daniel Gonçalves da Silva EMAIL: danielgoncalvest55111i@gmail.com
+2017-10-05 21:37:14,157 [INFO] from application in application-akka.actor.default-dispatcher-18 - -----------------------
+2017-10-05 21:37:14,159 [WARN] from play in application-akka.actor.default-dispatcher-18 - You are using status code '200' with flashing, which should only be used with a redirect status!
+2017-10-05 21:37:26,268 [INFO] from application in pool-4-thread-3 - Aplicação finalizada
+2017-10-05 21:37:26,276 [INFO] from application in pool-4-thread-3 - ApplicationTimer demo: Stopping application at 2017-10-06T00:37:26.275Z after 70s.
+2017-10-05 21:37:26,276 [INFO] from application in pool-4-thread-3 - Shutting down connection pool.
