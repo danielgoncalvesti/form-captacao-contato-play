@@ -50,8 +50,8 @@ public class InteressadoCRUD extends Controller {
     	
     	flash().clear();
     	flash("success", "Inscrição  realizada! ; Aguarde, em breve comunicaremos com você por email.");
-        return redirect("/");
-    	//return ok(views.html.index.render("Index", newForm));
+        //return redirect("/");
+    	return ok(views.html.index.render("Index", newForm));
     }
 
 //    public static void validationErrorExamples() {
