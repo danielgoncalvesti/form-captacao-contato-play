@@ -1,10 +1,10 @@
-@(message: String, intForm: Form[Interessado])
+@(title: String, intForm: Form[Interessado])
 
 @import helper._
 @import views.html.bootstrap3._
 
 
-@main("Inscrição do Workshop do PlayFramework") {
+@main(title) {
 <div class="container">
     
     @if(flash.containsKey("success")) {
