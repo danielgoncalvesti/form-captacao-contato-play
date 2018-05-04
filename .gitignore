@@ -2,3 +2,10 @@
 # Intellij IDEA
 ###############
 .idea/
+
+####
+#MAC
+####
+.DS_Store
+
+
