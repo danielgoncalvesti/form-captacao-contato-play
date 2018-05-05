@@ -4,13 +4,13 @@
 # --- !Ups
 
 create table conhecimento_java (
-  id                            bigserial not null,
+  id                            bigint auto_increment not null,
   descricao                     varchar(255),
   constraint pk_conhecimento_java primary key (id)
 );
 
 create table interessado (
-  id                            bigserial not null,
+  id                            bigint auto_increment not null,
   nome                          varchar(255),
   email                         varchar(255),
   conhecimentojava_id           bigint,
@@ -23,10 +23,10 @@ create index ix_interessado_conhecimentojava_id on interessado (conhecimentojava
 
 # --- !Downs
 
-alter table if exists interessado drop constraint if exists fk_interessado_conhecimentojava_id;
+alter table interessado drop constraint if exists fk_interessado_conhecimentojava_id;
 drop index if exists ix_interessado_conhecimentojava_id;
 
-drop table if exists conhecimento_java cascade;
+drop table if exists conhecimento_java;
 
-drop table if exists interessado cascade;
+drop table if exists interessado;
 

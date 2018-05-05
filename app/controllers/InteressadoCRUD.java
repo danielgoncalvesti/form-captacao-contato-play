@@ -11,6 +11,7 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.*;
 
+
 /**
  * Created by danielgoncalvesti on 17/05/17.
  */
@@ -44,10 +45,6 @@ public class InteressadoCRUD extends Controller {
             return badRequest(views.html.index.render("Index", form));
         }
     	InteressadoHelper.salvar(form.get());
-    	Logger.info("--Inscrição Realizada--");
-    	Logger.info("NOME: "+form.get().nome + " " + "EMAIL: "+ form.get().email);
-    	Logger.info("-----------------------");
-    	
     	flash().clear();
     	flash("success", "Inscrição  realizada! ; Aguarde, em breve comunicaremos com você por email.");
     	
