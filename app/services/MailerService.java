@@ -29,7 +29,7 @@ public class MailerService {
     }
     public static String attachmentInteressados(){
         List<Interessado> interessados = models.InteressadoHelper.getInteressadoAll();
-        String listAttachment = null;
+        String listAttachment = "";
         for (Interessado i : interessados){
             listAttachment += i.nome+";"+i.conhecimentoJava.id+";"+i.email+"\n";
         }
