@@ -11,7 +11,8 @@ create table conhecimento_java (
 
 create table interessado (
   id                            bigserial not null,
-  nome                          varchar(255),
+  primeiro_nome                 varchar(255),
+  sobrenome                     varchar(255),
   email                         varchar(255),
   conhecimentojava_id           bigint,
   constraint pk_interessado primary key (id)

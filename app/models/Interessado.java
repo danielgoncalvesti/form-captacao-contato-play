@@ -18,22 +18,23 @@ public class Interessado extends Model{
     public Long id;
 
     @Constraints.Required(message = "Este campo é obrigatório.")
-    public String nome;
+    public String primeiroNome;
+
+    @Constraints.Required(message = "Este campo é obrigatório.")
+    public String sobrenome;
     
     @Constraints.Required(message = "Este campo é obrigatório.")
     @Constraints.Email(message = "")
     public String email;
-    
-//    @Constraints.Required
-//    public Integer idade;
 
     @ManyToOne
     @JoinColumn(name="conhecimentojava_id", referencedColumnName="id")
     @Constraints.Required(message="teste")
     public ConhecimentoJava conhecimentoJava;
 
-    public Interessado(String nome, String email, ConhecimentoJava cj){
-        this.nome = nome;
+    public Interessado(String primeiroNome, String sobrenome, String email, ConhecimentoJava cj){
+        this.primeiroNome = primeiroNome;
+        this.sobrenome = sobrenome;
         this.email = email;
         this.conhecimentoJava = cj;
     }
@@ -50,7 +51,7 @@ public class Interessado extends Model{
 
     public List<ValidationError> validate() {
         List<ValidationError> errors = new ArrayList<ValidationError>();
-        if (nome == null || nome.equals("")) {
+        if ((primeiroNome == null || primeiroNome.equals("")) && (sobrenome == null || sobrenome.equals(""))) {
             errors.add(new ValidationError("conhecimeentoJava", "This e-mail is already registered."));
         }
         return errors.isEmpty() ? null : errors;

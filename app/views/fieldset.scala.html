@@ -9,10 +9,15 @@
     </div>
 
     <!-- Name -->
-    @text(intForm("nome"),
-        label = "Nome*",
-        placeholder = "Nome Completo",
-        help = "Por favor, coloque seu nome.")
+    @text(intForm("primeiroNome"),
+    label = "Primeiro Nome*",
+    placeholder = "Primeiro Nome",
+    help = "Por favor, coloque seu primeiro nome.")
+
+    @text(intForm("sobrenome"),
+    label = "Sobrenome*",
+    placeholder = "Sobrenome",
+    help = "Por favor, coloque seu sobrenome.")
 
     @text(intForm("email"),
         label = "Email*",
