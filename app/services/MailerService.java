@@ -20,7 +20,7 @@ public class MailerService {
         email.setFrom("danielgoncalvesti@gmail.com");
         email.addTo("dufabc@gmail.com");
         email.setBodyHtml(MailerService.mailBody());
-        email.addAttachment("data.txt", "data".getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE);
+        email.addAttachment("data.txt", "data\ndata2\ndata3".getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE);
         mailerClient.send(email);
     }
 
