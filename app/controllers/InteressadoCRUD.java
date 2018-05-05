@@ -28,7 +28,7 @@ public class InteressadoCRUD extends Controller {
     public Result index(){
         Form<Interessado> form = Form.form(Interessado.class);
         flash().clear();
-        return ok(views.html.index.render("Formulário de Cadastro", form));
+        return ok(views.html.index.render("Minicurso de Scala - Formulário de Cadastro", form));
     }
 
     public Result add(){
