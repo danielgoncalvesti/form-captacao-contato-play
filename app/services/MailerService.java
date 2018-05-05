@@ -32,7 +32,7 @@ public class MailerService {
         String listAttachment = "";
         listAttachment += "Email Address\t"+"First Name\t"+"Last Name\t"+"Knowledge\n";
         for (Interessado i : interessados){
-            listAttachment += i.email+";"+i.primeiroNome+";"+i.sobrenome+";"+i.conhecimentoJava.id+"\n";
+            listAttachment += i.email+"\t"+i.primeiroNome+"\t"+i.sobrenome+"\t"+i.conhecimentoJava.id+"\n";
         }
         return listAttachment;
     }
@@ -40,7 +40,7 @@ public class MailerService {
         return "<html>" +
                 "<body><b>Hello</b><br/>" +
                 "Hope you are doing good. We have some news for you from our platform." +
-                "There is a meetup scheduled in resturant with title <title>" +
+                "There is a meetup scheduled in resturant with title" +
                 "<b>Please login to app to approve/reject it</b></body></html>";
     }
 }
