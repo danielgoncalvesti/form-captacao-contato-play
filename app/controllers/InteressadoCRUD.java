@@ -20,6 +20,7 @@ public class InteressadoCRUD extends Controller {
     @Inject
     FormCreator formCreator = new FormCreator();
 
+
 //    public InteressadoCRUD(FormFactory formFactory){
 //        this.interessadoForm = formFactory.form(Interessado.class);
 //    }

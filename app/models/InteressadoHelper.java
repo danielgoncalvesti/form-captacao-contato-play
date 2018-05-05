@@ -7,6 +7,7 @@ public class InteressadoHelper {
 	public static void salvar(Interessado interessado){
 		interessado.save();
 	}
+
 	public static List<Interessado> getInteressadoByEmail(String emailTentado) {
 		List<Interessado> interessado = Interessado.find.query().where()
 				.ilike("email", emailTentado)
@@ -17,4 +18,10 @@ public class InteressadoHelper {
 		
 		return interessado;
 	}
+
+	public static List<Interessado> getInteressadoAll(){
+		List<Interessado> interessadosAll = Interessado.find.all();
+		return interessadosAll;
+	}
+
 }
