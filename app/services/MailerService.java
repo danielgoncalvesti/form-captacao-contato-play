@@ -20,18 +20,18 @@ public class MailerService {
     public void sendEmail() {
         String cid = "1234";
         Email email = new Email();
-        email.setSubject("Lista de Email Interessados");
+        email.setSubject("Lista de emails de interessados");
         email.setFrom("danielgoncalvesti@gmail.com");
         email.addTo("danielgoncalvesti@gmail.com");
         email.setBodyHtml(MailerService.mailBody());
-        email.addAttachment("interessadosEmail.csv", attachmentInteressados().getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE);
+        email.addAttachment("interessados.csv", attachmentInteressados().getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE);
         mailerClient.send(email);
     }
     public static String attachmentInteressados(){
         List<Interessado> interessados = models.InteressadoHelper.getInteressadoAll();
         String listAttachment = null;
         for (Interessado i : interessados){
-            listAttachment += i.nome+";"+i.conhecimentoJava+";"+i.email+"\n";
+            listAttachment += i.nome+";"+i.conhecimentoJava.id+";"+i.email+"\n";
         }
         return listAttachment;
     }
