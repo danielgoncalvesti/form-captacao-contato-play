@@ -1,8 +1,12 @@
 package services;
+import models.Interessado;
+import models.InteressadoHelper;
 import play.libs.mailer.Email;
 import play.libs.mailer.MailerClient;
 import javax.inject.Inject;
 import java.io.File;
+import java.util.List;
+
 import org.apache.commons.mail.EmailAttachment;
 
 public class MailerService {
@@ -16,17 +20,24 @@ public class MailerService {
     public void sendEmail() {
         String cid = "1234";
         Email email = new Email();
-        email.setSubject("News from Meetup platform");
+        email.setSubject("Lista de Email Interessados");
         email.setFrom("danielgoncalvesti@gmail.com");
-        email.addTo("dufabc@gmail.com");
+        email.addTo("danielgoncalvesti@gmail.com");
         email.setBodyHtml(MailerService.mailBody());
-        email.addAttachment("data.txt", "data\ndata2\ndata3".getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE);
+        email.addAttachment("interessadosEmail.csv", attachmentInteressados().getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE);
         mailerClient.send(email);
     }
-
+    public static String attachmentInteressados(){
+        List<Interessado> interessados = models.InteressadoHelper.getInteressadoAll();
+        String listAttachment = null;
+        for (Interessado i : interessados){
+            listAttachment += i.nome+";"+i.conhecimentoJava+";"+i.email+"\n";
+        }
+        return listAttachment;
+    }
     private static String mailBody () {
         return "<html>" +
-                "<body><b>Hello kanika,</b><br/>" +
+                "<body><b>Hello</b><br/>" +
                 "Hope you are doing good. We have some news for you from our platform." +
                 "There is a meetup scheduled in resturant with title <title>" +
                 "<b>Please login to app to approve/reject it</b></body></html>";
